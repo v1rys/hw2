@@ -8,16 +8,15 @@
 Console.WriteLine("Введите число");
 int  number = Convert.ToInt32(Console.ReadLine());
 int numder2 = 0;
-if (numder <= 99){
+if (number <= 99){
 Console.WriteLine("В этом числе нет третьей цифры ");
-
+}
 while (number>1000)
 {
     number=number/10;
+}
+    if (number > 99 ){
+    numder2 = number % 10;
 
+Console.WriteLine("Третья цифра" + numder2 );
 }
-if (number > 99 ){
-    number2 = number % 10;
-}
-}
-Console.WriteLine($"Третья цифра" + number2);
